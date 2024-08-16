@@ -1,0 +1,30 @@
+System Information:
+  system_info: "uname -a"
+  hostname: "hostname"
+  os_version: "cat /etc/os-release"
+  uptime: "uptime"
+  disk_usage: "df -h"
+  mounted_filesystems: "mount"
+  passwd: "cat /etc/passwd"  # Sensitive data
+  group: "cat /etc/group"    # Sensitive data
+  shadow: "cat /etc/shadow"  # Sensitive data
+
+Network Information:
+  network_interfaces: "ifconfig -a"
+  routing_table: "netstat -rn"
+  active_connections: "netstat -tulnp"
+  open_ports: "ss -tuln"
+
+User Information:
+  user_logins: "last"
+  current_logged_in_users: "who"
+  environment_variables: "printenv"
+  user_login_history: "last -f /var/log/wtmp"
+
+Process Information:
+  process_list: "ps aux"
+
+Logs:
+  system_logs: "cat /var/log/syslog"
+  auth_logs: "cat /var/log/auth.log"
+  kernel_logs: "cat /var/log/kern.log"
